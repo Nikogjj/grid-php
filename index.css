@@ -1,0 +1,17 @@
+
+.titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.catalogue{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    padding-left:100px ;
+    padding-right:100px ;
+}
+.produit{
+    background-color: white;
+}
