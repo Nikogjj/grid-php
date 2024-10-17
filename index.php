@@ -14,12 +14,15 @@ require_once(__DIR__."/src/common/bdd.php");
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a id="accueil" href="/index.php"><img src="/Vector.png" alt=""></a>
     <div class="titre">
         <h1>Fruitz Shop</h1>
     </div>
     <div class="catalogue">
         <?php for ($i=0; $i < count($fruits); $i++) :?>
-            <p class="produit"><a href="src/product/product.php?id=<?=$i?>">produit <?=$i?></a> </p> 
+                    <div class="produit">
+                            <a href="/src/product/product.php?id=<?=$i?>"><img src="/public/<?=$fruits[$i]["photo"]?>" alt=""></a>
+                        </div>      
         <?php endfor;?>
     </div>
 </body>

@@ -1,0 +1,40 @@
+body{
+    padding-left: 40%;
+    padding-right: 40%;
+}
+#accueil{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.affichage{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.affichage h1{
+    font-size: 50px;
+    margin: 0px;
+    color: black;
+}
+.affichage p{
+    color: black;
+}.affichage h2{
+    font-size: 25px;
+    color: black;
+}
+.affichage img{
+    background-color: white;
+    box-shadow: 0px 2px 5px black;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+  }

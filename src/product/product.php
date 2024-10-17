@@ -16,8 +16,22 @@ $produits_id=$_GET["id"];
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> Page produit</h1>
-    <p><?= $fruits[$produits_id]["name"] ?></p>
-    <a href="../../index.php">accueil</a>
+    <a id="accueil" href="../../index.php"><img src="/Vector.png" alt=""></a>
+    <div class="titre">
+        <h1> Page produit</h1>
+    </div>
+    <div class="affichage">
+            <!-- <div></div> -->
+            <img src="/public/<?=$fruits[$produits_id]["photo"]?>" alt="">
+            <!-- <div></div> -->
+            <!-- <div></div> -->
+            <p>id : <?= $_GET["id"] ?></p>
+            <!-- <div></div> -->
+            <!-- <div></div> -->
+            <h1><?= $fruits[$produits_id]["name"] ?></h1>
+            <!-- <div></div> -->
+            <!-- <div></div> -->
+            <h2>Stock : <?= $fruits[$produits_id]["stock"] ?></h2>
+    </div>
 </body>
 </html>

@@ -7,7 +7,7 @@ $fruits = [
         "stock" => 13
     ],
     [
-        "photo" => "tomate.png",
+        "photo" => "tomato.png",
         "name" => "Tomate rouge",
         "stock" => 18
     ],
